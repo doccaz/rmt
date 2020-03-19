@@ -5,8 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'puma', '3.10.0'
-gem 'mysql2', '~> 0.4.10'
+gem 'puma', '3.12.4'
+gem 'mysql2', '~> 0.5.3'
 
 gem 'nokogiri', '~> 1.10.3'
 gem 'thor'
@@ -40,6 +40,7 @@ group :development, :test do
   gem 'memory_profiler'
   gem 'danger'
   gem 'danger-rubocop'
+  gem 'strong_migrations'
 end
 
 group :development do
